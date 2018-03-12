@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Where Hope Wanders</title>
+
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+        
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+        
+        body {
+            line-height: 1;
+        }
+        
+        ol,
+        ul {
+            list-style: none;
+        }
+        
+        blockquote,
+        q {
+            quotes: none;
+        }
+        
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        /* END RESET */
+        /* FONT SCALE */
+        
+        html {
+            font-size: 1em;
+        }
+        
+        body {
+            background-color: white;
+            font-family: 'Libre Baskerville', serif;
+            font-weight: 400;
+            line-height: 1.45;
+            color: #333;
+        }
+        
+        p {
+            font-family: 'Helvetica';
+            margin-bottom: 1.3em;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin: 1.414em 0 0.5em;
+            font-weight: inherit;
+            line-height: 1.2;
+        }
+        
+        h1 {
+            margin-top: 0;
+            font-size: 3.998em;
+        }
+        
+        h2 {
+            font-size: 2.827em;
+        }
+        
+        h3 {
+            font-size: 1.999em;
+        }
+        
+        h4 {
+            font-size: 1.414em;
+        }
+        
+        small,
+        .font_small {
+            font-size: 0.707em;
+        }
+        
+         :root {
+            --main: #51C7B0;
+            --main-dark: #31AF96;
+            --main-darkest: #149C81;
+            --main-light: #7BDDCA;
+            --main-lightest: #B1F0E4;
+            --secondary: #F86579;
+            --secondary-dark: #F86579;
+            --secondary-darkest: #E91E3A;
+            --secondary-light: #FA8B9A;
+            --secondary-lightest: #FDBAC3;
+        }
+        
+        a {
+            color: var(--secondary-dark)
+        }
+        
+        a:visited {
+            color: var(--secondary-light)
+        }
+        
+        a:hover {
+            color: var(--secondary)
+        }
+        
+        .link_container {
+            position: sticky;
+        }
+        
+        .main_brand {
+            width: 12vw;
+        }
+        
+        .main_container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        
+        .main_nav {
+            background-color: var(--main);
+            -webkit-box-shadow: 2px 0px 24px 0px rgba(0, 0, 0, 0.62);
+            -moz-box-shadow: 2px 0px 24px 0px rgba(0, 0, 0, 0.62);
+            box-shadow: 2px 0px 24px 0px rgba(0, 0, 0, 0.62);
+            text-align: center;
+            width: 23%;
+        }
+        
+        .main_nav ul {
+            display: sticky;
+        }
+        
+        .main_nav ul li a {
+            color: #333;
+            font-size: 1.999em;
+            text-decoration: none;
+        }
+        
+        .main_nav ul li:hover {
+            background-color: var(--main-light);
+            cursor: pointer;
+        }
+        
+        .main_content {
+            width: 75%;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 2%;
+        }
+    </style>
+
+</head>
+
+<body class="main_container">
+    <nav class="main_nav">
+        <div class="link_container">
+
+            <img class="main_brand" src="https://cdn.shopify.com/s/files/1/1329/0165/t/4/assets/logo.png?16182101558351781210" alt="Where Hope Wanders Logo" />
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Posts</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+        </div>
+        </ul>
+    </nav>
+    <main class="main_content">
+
+        <h1>Where Hope Wanders</h1>
+
+        <p><em>The the best site for budget traveling advice</em></p>
+        <p>
+            <a href="#">Check out my sponser</a>
+        </p>
+
+        <p>
+            <a href="#1">Check out my sponser</a>
+        </p>
+
+
+        <p><strong>Need a pass port? </strong> You will need to make an appointment at the nearest post office that offers passport services to submit that application. The application is offered in paper form at the post office and available online at the
+            State Department website. Make sure it is filled out, but unsigned for the appointment. Along with your application, you will need a photo, proof of identity and US Citizenship. Most of the offices will take your photo when you come for the
+            appointment, but that will need to be confirmed when you call to make the appointment. If they do not, it will need to be taken somewhere else beforehand. Proof of identity and U.S. Citizenship documents such as, drivers license, Social Security
+            card and Birth Certificate will need to be brought in along with photocopies. The book was $150 in 2014, and I believe is still around the same price. It may seem expensive upfront but try thinking of it as $15 per year. The only reason you
+            should pay extra to expedite the process is if you are leaving on a trip in the next couple of weeks. They say it can take up to 6 months but I (and everyone I know) received it within a month. Any additional information you need can be found
+            online through USPS. On their main page: click on international and then passports for everything you need.
+        </p>
+
+        <h2>A Title Here</h2>
+        <p>
+            Lorem ipsum dolor amet four dollar toast stumptown williamsburg venmo craft beer laboris est quis aliqua. 8-bit copper mug small batch plaid trust fund, crucifix duis bespoke PBR&B proident pitchfork shoreditch. Pariatur 8-bit drinking vinegar keffiyeh,
+            brooklyn offal eu id raw denim man braid messenger bag everyday carry. Polaroid id tofu occupy. Organic enim deep v craft beer letterpress four dollar toast irure try-hard disrupt selfies consequat yuccie. Sunt aliqua umami taxidermy.
+        </p>
+
+        <h3>A Title Here</h3>
+        <p>
+            Lorem ipsum dolor amet four dollar toast stumptown williamsburg venmo craft beer laboris est quis aliqua. 8-bit copper mug small batch plaid trust fund, crucifix duis bespoke PBR&B proident pitchfork shoreditch. Pariatur 8-bit drinking vinegar keffiyeh,
+            brooklyn offal eu id raw denim man braid messenger bag everyday carry. Polaroid id tofu occupy. Organic enim deep v craft beer letterpress four dollar toast irure try-hard disrupt selfies consequat yuccie. Sunt aliqua umami taxidermy.
+        </p>
+
+        <h4>A Title Here</h4>
+        <p>
+            Lorem ipsum dolor amet four dollar toast stumptown williamsburg venmo craft beer laboris est quis aliqua. 8-bit copper mug small batch plaid trust fund, crucifix duis bespoke PBR&B proident pitchfork shoreditch. Pariatur 8-bit drinking vinegar keffiyeh,
+            brooklyn offal eu id raw denim man braid messenger bag everyday carry. Polaroid id tofu occupy. Organic enim deep v craft beer letterpress four dollar toast irure try-hard disrupt selfies consequat yuccie. Sunt aliqua umami taxidermy.
+        </p>
+
+        <h5>A Title Here</h5>
+        <p>
+            Lorem ipsum dolor amet four dollar toast stumptown williamsburg venmo craft beer laboris est quis aliqua. 8-bit copper mug small batch plaid trust fund, crucifix duis bespoke PBR&B proident pitchfork shoreditch. Pariatur 8-bit drinking vinegar keffiyeh,
+            brooklyn offal eu id raw denim man braid messenger bag everyday carry. Polaroid id tofu occupy. Organic enim deep v craft beer letterpress four dollar toast irure try-hard disrupt selfies consequat yuccie. Sunt aliqua umami taxidermy.
+        </p>
+
+        <h6>A Title Here</h6>
+        <p>
+            Lorem ipsum dolor amet four dollar toast stumptown williamsburg venmo craft beer laboris est quis aliqua. 8-bit copper mug small batch plaid trust fund, crucifix duis bespoke PBR&B proident pitchfork shoreditch. Pariatur 8-bit drinking vinegar keffiyeh,
+            brooklyn offal eu id raw denim man braid messenger bag everyday carry. Polaroid id tofu occupy. Organic enim deep v craft beer letterpress four dollar toast irure try-hard disrupt selfies consequat yuccie. Sunt aliqua umami taxidermy.
+        </p>
+    </main>
+</body>
+
+</html>
